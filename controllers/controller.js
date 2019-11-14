@@ -5,7 +5,7 @@ const Author = MongModels.Author;
 
 module.exports = {
     allAuthors: function(req, res) {
-        Author.find()
+        Author.find({}).sort({ name: 1 })
             .then(data => res.json({ message: "success", result: data }))
             .catch(err => res.json({ message: "error", result: err }))
     },
