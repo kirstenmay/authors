@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+    margin: 2vw 0;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 4vw;
+    font-weight: 60;
+}
+
+h2 {
+    font-weight: 80;
+}

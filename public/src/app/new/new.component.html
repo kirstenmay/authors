@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="card">
+                <h2 class="card-title">Add a new author</h2>
+                <div class="card-body">
+                    <form (submit)="newAuthor()">
+                        <div class="form-group row">
+                            <div class="col-3">
+                                <label for="name">Author Name:</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" name="name" [(ngModel)]="author.name" required minlength="4" placeholder="Author Full Name">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-outline-light" value="Add Author">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
